@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+    </style>
+</head>
+<body>
+<div id="formevent">
+    <form id="stuform">
+        <label>Name</label>
+        <input type="text" id="sname">
+        <br><br>
+        <label>Class</label>
+        <input type="text" id="sclass">
+        <br><br>
+        <label>Country</label>
+        <select id="scountry">
+            <option>Select Option</option>
+            <option>india</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select>
+        <br><br>
+        <button type="submit" id="btnsubmit">Submit</button>
+    </form>
+    <div id="test" style="border: 1px solid red; padding: 10px;">
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#stuform").submit(function(){
+            var name = $('#sname').val();
+            var classname = $('#sclass').val();
+            var countryname = $('#scountry').val();
+            alert("Hello "+ name+ "Class: " + classname+ "Your Country is: " + countryname);
+        });
+    });
+</script>
+</body>
+</html>
