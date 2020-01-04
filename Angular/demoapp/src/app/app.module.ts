@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StrInterpolationComponent } from './str-interpolation/str-interpolation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StrInterpolationComponent
   ],
   imports: [
     BrowserModule,
