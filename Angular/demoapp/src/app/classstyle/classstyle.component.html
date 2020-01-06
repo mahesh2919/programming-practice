@@ -1,0 +1,18 @@
+<div class="box" [class.myclass]="mypro">
+<p>Class Binding</p>
+</div>
+
+<div class="box" [style.margin]="mystyle">
+    <p>Style Binding</p>
+    </div>
+
+
+    <div class="box" [style.margin]="isActive? mystyle : '5px'">
+        <p>Style Binding</p>
+        </div>
+
+
+        
+    <div class="box" [ngClass]="mltclass">
+        <p>Class ng Binding</p>
+        </div>

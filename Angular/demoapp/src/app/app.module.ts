@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StrInterpolationComponent } from './str-interpolation/str-interpolation.component';
+import { ClassstyleComponent } from './classstyle/classstyle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StrInterpolationComponent
+    StrInterpolationComponent,
+    ClassstyleComponent
   ],
   imports: [
     BrowserModule,
