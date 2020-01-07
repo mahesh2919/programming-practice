@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box{background: #fe7255; padding: 20px; width: 400px;}
+        #box h3{color: #000; font-size:24px; margin: 0px; margin-bottom: 10px;}
+        #box p{font-size:16px; color: #000; margin: 0px;}
+        .boxbg{background:#ccc;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Text Box</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil in id earum suscipit maxime veniam asperiores cum eligendi fugit, ea culpa et accusamus at officiis dignissimos, quo explicabo quibusdam adipisci.</p> 
+    </div>
+    
+    <button id="empty">Empty</button> <button id="remove">Remove</button> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('#empty').click(function(){
+          $('.box').empty();
+         });
+         $('#remove').click(function(){
+          $('.box').remove();
+         });
+        });
+    </script>
+</body>
+</html>
