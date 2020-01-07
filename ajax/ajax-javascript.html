@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+    </style>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="loaddata">
+            <h3>this change</h3>
+        </div>
+        <button class="btn btn-success" onclick="myfun()">Click Me !</button>
+    </div>
+
+
+<script>
+    function myfun(){
+        var req = new XMLHttpRequest();
+        req.open('GET', 'loada.html', true);
+        req.send();
+        req.onreadystatechange=function(){
+            if(req.readyState==4 && req.status==200){
+                document.getElementById('loaddata').innerHTML=req.responseText;
+            }
+        }
+    }
+    $(document).ready(function(){
+      $('#btnclick').click(function(){
+        $('#loaddata').load('load.html', function(){
+            alert("This is Done");
+        });
+      });
+    });
+</script>
+</body>
+</html>
