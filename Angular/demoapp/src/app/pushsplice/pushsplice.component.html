@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" name="" class="form-control" #uname placeholder="User Name"/>
+            <button class="btn btn-success" (click)="createuser(uname)">Create User</button>
+        </div>
+    </div>
+    <div class="row">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                </tr>
+            </thead>
+            
+            <tbody *ngFor="let user of users">
+                <tr>
+                    <td>{{user.name}}</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</div>
+

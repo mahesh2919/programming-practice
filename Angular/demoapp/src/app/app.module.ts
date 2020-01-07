@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StrInterpolationComponent } from './str-interpolation/str-interpolation.component';
 import { ClassstyleComponent } from './classstyle/classstyle.component';
+import { PushspliceComponent } from './pushsplice/pushsplice.component';
+import { EventbindComponent } from './eventbind/eventbind.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StrInterpolationComponent,
-    ClassstyleComponent
+    ClassstyleComponent,
+    PushspliceComponent,
+    EventbindComponent
   ],
   imports: [
     BrowserModule,
