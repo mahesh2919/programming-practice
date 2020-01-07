@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       
+    </style>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <p id="changehere">this change</p>
+        <button class="btn btn-success btnclick">Click Me !</button>
+    </div>
+
+
+<script>
+   $(document).ready(function(){
+    $('.btnclick').click(function(){
+       /* $.get('get.html', function(data,status){
+            $('#changehere').html(data);
+            alert(status);
+        });*/
+
+        $.post('post.php',{
+            name:'mahesh',
+            subs: "Demo"
+
+
+        } ,function(data,status){
+            $('#changehere').html(data);
+            alert(status);
+        });
+    });
+   });
+</script>
+</body>
+</html>
