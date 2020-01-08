@@ -1,10 +1,55 @@
+h1 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h2 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h3 {
+  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h4 {
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h5 {
+  color: purple;
+  font-family: Arial, Helvetica, sans-serif; }
+
 .box {
   background: gray;
   width: 200px;
   height: 300px;
-  padding: 20px; }
+  padding: 20px;
+  float: left;
+  margin-right: 20px; }
+  .box h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; }
+  .box p {
+    font-size: 14px;
+    color: #fff; }
+  .box button {
+    padding: 10px; }
 
-.box h1 {
-  font-size: 24;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff; }
+.box2 {
+  background: green;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  float: left; }
+  .box2 h1 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff; }
+  .box2 p {
+    font-size: 14px;
+    color: #fff; }
+  .box2 button {
+    padding: 10px; }
+  .box2 img {
+    width: 100%;
+    margin-bottom: 20px; }

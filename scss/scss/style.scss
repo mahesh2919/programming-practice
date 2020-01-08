@@ -1,5 +1,56 @@
 
-$bg:gray;
-$fcolor:#fff;
-.box{background:$bg; width: 200px; height: 300px; padding: 20px;}
-.box h1{ font-size: 24; font-family: Arial, Helvetica, sans-serif; color:$fcolor;}
+@import "partials/variables";
+@import "partials/typography";
+.box
+{
+    background:$bg; 
+    width: 200px; 
+    height: 300px; 
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+
+    h1
+    { 
+        font-size: 24px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        color:$fcolor;
+    }
+    p
+    {
+        font-size:14px; 
+        color:$fcolor;
+    }
+    button
+    {
+        padding: 10px; 
+    }
+}
+.box2
+{
+    background:map-get($colors, green-color ); 
+    width: 200px; 
+    height: 300px; 
+    padding: 20px;
+    float: left;
+    h1
+    { 
+        font-size: 24px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        color:$fcolor;
+    }
+    p
+    {
+        font-size:14px; 
+        color:$fcolor;
+    }
+    button
+    {
+        padding: 10px; 
+    }
+    img
+    {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}
