@@ -34,7 +34,7 @@ mysqli_select_db($con, 'ajaxformdb');
                             <?php
 
                             $q= "select * from degree";
-                            $result=mysqli_query($con , $q);
+                            $result=mysqli_query($con, $q);
                             while($rows= mysqli_fetch_array($result)){
                                 ?>
                                     <option value="<?php echo $rows['mid']; ?>"><?php echo $rows['degrees'] ?></option>

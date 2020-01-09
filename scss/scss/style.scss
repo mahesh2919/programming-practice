@@ -54,3 +54,45 @@
         margin-bottom: 20px;
     }
 }
+@mixin cardblock {
+    width: 500px; 
+    height: 300px; 
+    display: block;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card1
+{
+   @include cardblock;
+    background-color: #6613cf;
+}
+
+.card2
+{
+    @include cardblock;
+    background-color: #e65540;
+}
+
+$main:1170;
+
+@function half($width){
+
+    @return  $width/2+ px;
+
+}
+@function one-third($width){
+
+    @return  $width/3+ px;
+
+}
+.main{width: $main;}
+.half{
+    width: half($main);
+    float: left;
+    padding: 10px;
+}
+.one-third{
+    width: one-third($main);
+    float: left;
+    padding: 10px;
+}

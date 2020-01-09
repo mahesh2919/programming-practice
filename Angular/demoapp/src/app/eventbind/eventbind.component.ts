@@ -18,7 +18,7 @@ export class EventbindComponent implements OnInit {
   oninputclick(event){
 console.log(event.target.value);
   }
-  addpro(){
+  /*addpro(){
     this.msg=event.target.value + " Produt Add";
-  }
+  }*/
 }
