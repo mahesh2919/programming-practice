@@ -7,14 +7,17 @@ function getpost(){
         method:"GET",
         success: function(data){
            var newData = data.slice(0, 15);
+           var listitem=[];
            newData.forEach(function(newItam){
                //console.log("newItam", newItam);
-               $("<li/>",{
+               var $li = $("<li/>",{
                    class:"list-group-item",
                    "data-id":newItam.id,
                    html:newItam.title
-               }).appendTo($listgroup);
+               });
+               listitem.push($li);
            });
+           $listgroup.append(listitem);
         },
         error:function(){
             console.log("err");
