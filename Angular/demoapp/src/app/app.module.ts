@@ -9,6 +9,7 @@ import { PushspliceComponent } from './pushsplice/pushsplice.component';
 import { EventbindComponent } from './eventbind/eventbind.component';
 import { TemplateRefrenceComponent } from './template-refrence/template-refrence.component';
 import { TwowaydatabindComponent } from './twowaydatabind/twowaydatabind.component';
+import { ClassStylebindComponent } from './class-stylebind/class-stylebind.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TwowaydatabindComponent } from './twowaydatabind/twowaydatabind.compone
     PushspliceComponent,
     EventbindComponent,
     TemplateRefrenceComponent,
-    TwowaydatabindComponent
+    TwowaydatabindComponent,
+    ClassStylebindComponent
   ],
   imports: [
     BrowserModule,

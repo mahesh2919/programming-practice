@@ -41,3 +41,45 @@ button:hover:before{
 button:hover:after{
     margin-left: 50%;
 }
+
+input.imp{
+    margin: 20px;
+    height: 40px;
+    width: 80px;
+    -webkit-appearance: none;
+    background: gray;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 20px;
+}
+
+input.imp:checked{
+    background: brown;
+}
+input.imp:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 40px;
+    background: cornsilk;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+input.imp:checked:before
+{
+    margin-left: 40px;
+}
+::-webkit-scrollbar{
+   
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#a8408e, #21437d);
+    border-radius: 10px;
+}
+
+
+
+
